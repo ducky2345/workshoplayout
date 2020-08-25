@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet"> <!-- google font -->
+    <link rel="stylesheet" href="flexslider/flexslider.css">  <!-- สไลด์ -->
+    <link rel="stylesheet" href="magnificpopup/magnific-popup.css"> <!-- popup -->
+    <link rel="stylesheet" href="css/style.css"> <!-- link css -->
+</head>
+<body>
+    <nav>
+        <label>ICT FOR YOU</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Featuers <i class="fas fa-caret-down"></i></a> 
+                <ul><li><a href="#">ทดสอบ 1</a></li>
+                    <li><a href="#">ทดสอบ 2</a></li>
+                    <li><a href="#">ทดสอบ 3</a></li>
+                    <li><a href="#">ทดสอบ 4</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Web Design  <i class="fas fa-caret-down"></i></a>
+                <ul><li><a href="#">front end</a></li>
+                    <li><a href="#">back end</a></li>
+                    <li><a href="#">other  <i class="fas fa-caret-right"></i></a>
+                        <ul><li><a href="#">Developer</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">status</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+
+    </nav>
+<!--ส่วนของ slide show image-->
+<div class="slideshow">
+<!-- ปลั้กอินสไลด์ -->
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/A36sZNP.jpg" />
+          </li>
+          <li>
+            <img src="images/I2D7NLb.png" />
+          </li>
+          <li>
+            <img src="images/xYnqbAL.jpg" />
+          </li>
+          
+        </ul>
+      </div>
+
+    <a href="#"><i class="fas fa-angle-down"></i></a>
+
+</div>
+<!-- image gallery -->
+
+<h1>portfoio project</h1>
+
+<div class="gallery">
+    <div class="row">
+        <div class="col">
+            <a class="popup" href="images/gellery/1.jpg"><img src="images/gellery/1.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gellery/2.jpg"><img src="images/gellery/2.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gellery/3.jpg"><img src="images/gellery/3.jpg"></a>
+        </div>
+        <div class="col">
+            <a class="popup" href="images/gellery/4.jpg"><img src="images/gellery/4.jpg"></a>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="https://kit.fontawesome.com/9d68d6b84d.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
+    <script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+    <!-- slide -->
+    <script> 
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            slideshowSpeed:2500,
+            // direction:"horizontal หรือ vertical"
+          });
+            // popup 
+    
+        $('.popup').magnificPopup({
+        type: 'image',
+        // other options
+        gallery:{
+            enabled:true
+        },
+         gallery:{
+            enabled:true
+        }
+      });
+    });
+    </script>
+
+<footer>
+    <div>
+       &copy; By Evil Syrup eiei
+    </div>
+</footer>
+</body>
+</html>   
